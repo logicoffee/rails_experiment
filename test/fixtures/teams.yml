@@ -1,0 +1,10 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+A:
+  name: チームA
+
+B:
+  name: チームB
+
+C:
+  name: チームC
