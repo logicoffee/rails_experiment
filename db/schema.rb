@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_04_150356) do
+ActiveRecord::Schema.define(version: 2019_02_04_150850) do
+
+  create_table "players", force: :cascade do |t|
+    t.string "name", null: false
+    t.boolean "deleted", default: false, null: false
+    t.integer "team_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["team_id"], name: "index_players_on_team_id"
+  end
 
   create_table "teams", force: :cascade do |t|
     t.string "name", null: false

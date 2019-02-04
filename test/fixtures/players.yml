@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+a:
+  name: 重田しげる
+  team: A
+
+b:
+  name: 佐藤里子
+  team: A
+
+c:
+  name: 鈴木すず
+  team: B
+
+d:
+  name: 高橋たか子
+  team: B
+
+e:
+  name: 神崎かん太
+  team: C
+  deleted: true
