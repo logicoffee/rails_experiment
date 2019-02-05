@@ -35,5 +35,6 @@ rails db:fixtures:load
 
 ```bash
 bundle exec rails c -s
-irb> # 実験...
 ```
+
+`app/models/team.rb`を編集することで, 挙動の変化が確認できます.
