@@ -1,24 +1,39 @@
-# README
+# Scoped Association 実験用
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[ブログ]()で解説しているScoped Associationの実験用のRailsアプリです.
 
-Things you may want to cover:
+## 実験の準備
 
-* Ruby version
+### リポジトリをclone
 
-* System dependencies
+```bash
+git clone -b scoped-association git@github.com:logicoffee/rails_experiment.git
+cd rails_experiment
+```
 
-* Configuration
+### Gemのインストール
 
-* Database creation
+```bash
+bundle install --path vendor/bundle
+```
 
-* Database initialization
+### migration
 
-* How to run the test suite
+```bash
+rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### 実験用データのインポート
 
-* Deployment instructions
+```bash
+rails db:fixtures:load
+```
 
-* ...
+## 実験のしかた
+
+`rails console`内にて実験が行えます.
+
+```bash
+bundle exec rails c -s
+irb> # 実験...
+```
